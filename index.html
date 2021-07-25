@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>lopullinen</title>
+    <meta charset="utf-8">
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="https://apis.google.com/js/client:plusone.js" type="application/javascript"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+    <script src = "https://code.createjs.com/1.0.0/createjs.min.js"></script>
+    <script src = "https://code.createjs.com/1.0.0/tweenjs.min.js"></script>
+    <script defer src = "./sisaan.js"></script>
+    <script defer src = "./getAlbums.js"></script>
+    <script defer src="./getAndShow.js"></script>
+    <script src="./uiButtons.js"></script>
+   
+
+  
+</head>
+<body>
+  <div id = "kuvat"> <br></div>
+  Tässä tekstiä.
+<br>
+<canvas id = "pic1"> Selaimesi ei tue HTML5 canvas tagia. </canvas>
+<br>
+  ja lisää ekstiä. 
+
+  <br>
+  <canvas id = "pic2" style ="border:2px solid blue"> <br>Selaimesi ei tue HTML5 canvas tagia.</canvas> 
+    <br>
+    lopullinen tekstiä
+    <br>
+  <canvas id = "pic3" style ="border:2px solid green"> Selaimesi ei tue HTML5 canvas tagia.</canvas> 
+    <br>
+    viimeinen teksti
+
+     <script>
+       var places = [ 
+            {"posit":"pic1", "name":"lak-maisema"},
+           {"posit":"pic2", "name":"china_songpan"},
+           
+           {"posit":"pic3", "name":"hue_haudat"} 
+        ];
+       window.addEventListener('load',(event) => {authenticate().then(loadClient).then(listAlbums)});
+      //showAnimate();
+    </script>
+TÅSSA DATA
+
+</body>
+</html>
